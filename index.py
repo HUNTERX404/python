@@ -74,7 +74,7 @@ async def handle_image(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # Main function to set up the bot
 def main():
     app = ApplicationBuilder().token(TOKEN).build()
-
+ 
     # Add handlers
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(button_click))  # Handle button clicks
